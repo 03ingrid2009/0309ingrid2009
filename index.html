@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>🌟 Mis Gustos Personales 🌟</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e6e6fa, #fef9ff);
+            color: #1a1aff;
+            font-family: 'Comic Neue', cursive;
+            padding: 30px;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #ffb6c1;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .nube {
+            background: white;
+            border-radius: 40px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 8px 18px rgba(0, 0, 255, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nube:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 255, 0.3);
+        }
+
+        .nube img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            border: 3px solid #87cefa;
+            padding: 5px;
+            background-color: #f0f8ff;
+        }
+
+        details {
+            background: none;
+            border: none;
+        }
+
+        summary {
+            font-size: 22px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 10px;
+            list-style: none;
+        }
+
+        ol, ul {
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        ul ul {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>💖 Mis Gustos Personales 💖</h1>
+
+    <div class="contenedor">
+        <!-- Comidas -->
+        <div class="nube">
+            <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png" alt="Frutas favoritas">
+            <details>
+                <summary>🍽️ Comidas Favoritas</summary>
+                <ol>
+                    <li>🥣 Sopa de lenteja</li>
+                    <li>🐷 Rabito de puerco con lentejas</li>
+                    <li>🍝 Coditos con tuna</li>
+                    <li>🧀 Lasaña de carne</li>
+                    <li>🍗 Arroz con pollo</li>
+                    <li>🍍 Piña</li>
+                    <li>🍏 Manzana verde</li>
+                    <li>🍇 Uva verde</li>
+                </ol>
+            </details>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="nube">
+            <img src="https://cdn-icons-png.flaticon.com/512/1995/1995558.png" alt="Persona bailando salsa">
+            <details>
+                <summary>🎉 Hobbies</summary>
+                <ul>
+                    <li>🎮 Jugar videojuegos</li>
+                    <li>💃 Bailar salsa y merengue</li>
+                    <li>🎤 Cantar canciones populares</li>
+                    <li>🎧 Escuchar música tranquila</li>
+                </ul>
+            </details>
+        </div>
+
+        <!-- Asignaturas -->
+        <div class="nube">
+            <img src="https://cdn-icons-png.flaticon.com/512/2971/2971885.png" alt="Cuaderno">
+            <details>
+                <summary>📚 Asignaturas Favoritas</summary>
+                <ul>
+                    <li>🏃 Recreo
+                        <ul>
+                            <li>🍱 Comer con amigos</li>
+                            <li>🌳 Pasear por el patio</li>
+                        </ul>
+                    </li>
+                    <li>✏️ Español
+                        <ul>
+                            <li>📝 Ortografía</li>
+                            <li>📖 Lectura comprensiva</li>
+                        </ul>
+                    </li>
+                    <li>💻 Multimedia
+                        <ul>
+                            <li>💻 Edición de imágenes</li>
+                            <li>🎞️ Animaciones con Canva</li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+        </div>
+    </div>
+</body>
+</html>

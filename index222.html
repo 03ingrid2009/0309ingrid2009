@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario de Información para Jóvenes 🌟</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #d6a6f5, #a077d9);
+            padding: 20px;
+            color: #b00000; /* rojo oscuro */
+        }
+        .form-container {
+            background-color: #f3e5f5;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px #9c27b0aa;
+            border: 2px solid #b00000;
+        }
+        h2 {
+            text-align: center;
+            color: #b00000;
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #b00000;
+            font-size: 1.05em;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            border-radius: 6px;
+            border: 1.5px solid #b00000;
+            box-sizing: border-box;
+            resize: vertical;
+            font-size: 1em;
+            font-weight: 500;
+        }
+        textarea {
+            height: 70px;
+        }
+        ::placeholder {
+            color: #a06fb4;
+            font-style: italic;
+        }
+        .buttons {
+            margin-top: 25px;
+            text-align: center;
+        }
+        button {
+            background-color: #b00000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            margin: 0 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #7a0000;
+        }
+        #mensajeFinal {
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #4caf50;
+            display: none;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>📝 Formulario de Información para Jóvenes 🌈</h2>
+        <form id="formulario">
+            <label for="nombre">👤 Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" />
+
+            <label for="edad">🎂 Edad:</label>
+            <input type="text" id="edad" name="edad" placeholder="Ejemplo: 18" />
+
+            <label for="genero">⚧ Género:</label>
+            <select id="genero" name="genero">
+                <option value="" disabled selected>Seleccione...</option>
+                <option value="masculino">Masculino ♂️</option>
+                <option value="femenino">Femenino ♀️</option>
+                <option value="otro">Otro 🌟</option>
+                <option value="prefiero_no_decir">Prefiero no decir 🤐</option>
+            </select>
+
+            <label for="fechaNacimiento">📅 Fecha de nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" />
+
+            <label for="correo">📧 Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" />
+
+            <label for="telefono">📞 Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+52 123 456 7890" />
+
+            <label for="centroEducativo">🏫 Centro educativo:</label>
+            <input type="text" id="centroEducativo" name="centroEducativo" placeholder="Nombre de tu escuela o universidad" />
+
+            <label for="grado">🎓 Grado/Nivel:</label>
+            <input type="text" id="grado" name="grado" placeholder="Ejemplo: 3° de secundaria" />
+
+            <label for="intereses">✨ Intereses personales:</label>
+            <textarea id="intereses" name="intereses" placeholder="Ejemplo: Deportes, música, tecnología..."></textarea>
+
+            <label for="redes">📱 Redes sociales (Instagram, TikTok, etc):</label>
+            <input type="text" id="redes" name="redes" placeholder="@tuusuario" />
+
+            <label for="contactoEmergencia">🚨 Nombre de contacto de emergencia:</label>
+            <input type="text" id="contactoEmergencia" name="contactoEmergencia" placeholder="Nombre de un familiar o amigo" />
+
+            <label for="telefonoEmergencia">📲 Teléfono de emergencia:</label>
+            <input type="tel" id="telefonoEmergencia" name="telefonoEmergencia" placeholder="+52 123 456 7890" />
+
+            <div class="buttons">
+                <button type="button" id="btnEnviar">Enviar</button>
+                <button type="button" id="btnReiniciar" style="display:none;">Comenzar de nuevo</button>
+            </div>
+        </form>
+
+        <div id="mensajeFinal">✅ Formulario terminado. ¡Gracias por tu participación!</div>
+    </div>
+
+    <script>
+        const formulario = document.getElementById('formulario');
+        const btnEnviar = document.getElementById('btnEnviar');
+        const btnReiniciar = document.getElementById('btnReiniciar');
+        const mensajeFinal = document.getElementById('mensajeFinal');
+
+        btnEnviar.addEventListener('click', () => {
+            // Aquí podrías validar los campos si quieres (no obligatorio)
+            formulario.style.display = 'none';
+            mensajeFinal.style.display = 'block';
+            btnReiniciar.style.display = 'inline-block';
+            btnEnviar.style.display = 'none';
+        });
+
+        btnReiniciar.addEventListener('click', () => {
+            formulario.reset();
+            formulario.style.display = 'block';
+            mensajeFinal.style.display = 'none';
+            btnReiniciar.style.display = 'none';
+            btnEnviar.style.display = 'inline-block';
+        });
+    </script>
+</body>
+</html>

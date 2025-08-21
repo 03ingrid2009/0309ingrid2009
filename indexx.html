@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla de Datos</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #cceeff, #ffffff); /* Degradado celeste */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      color: #d62828;
+      font-size: 28px;
+      margin-top: 30px;
+      text-shadow: 1px 1px 2px #999;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 85%;
+      margin: 30px auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 14px;
+      text-align: center;
+      color: #b30000; /* Letras en rojo */
+      font-size: 16px;
+    }
+
+    th {
+      background-color: #a2d2ff;
+      font-size: 18px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f0f8ff;
+    }
+
+    tr:hover {
+      background-color: #ffe0f0;
+      transition: 0.3s;
+    }
+
+    td::before {
+      content: "🎈 ";
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📋 Tabla de Datos  🧮</h2>
+
+  <table>
+    <tr>
+      <th>🧑‍🎓 Nombre</th>
+      <th>🎂 Edad</th>
+      <th>🏅 Deporte</th>
+      <th>📱 Celular</th>
+    </tr>
+    <tr>
+      <td>🎉 Luis</td>
+      <td>16</td>
+      <td>⚽ Fútbol</td>
+      <td>📞 6123-4567</td>
+    </tr>
+    <tr>
+      <td>🎀 María</td>
+      <td>17</td>
+      <td>🏊‍♀ Natación</td>
+      <td>📞 6789-1234</td>
+    </tr>
+    <tr>
+      <td>🎯 Carlos</td>
+      <td>15</td>
+      <td>🏀 Baloncesto</td>
+      <td>📞 6001-1122</td>
+    </tr>
+    <tr>
+      <td>🌸 Sofía</td>
+      <td>18</td>
+      <td>🏐 Voleibol</td>
+      <td>📞 6345-9988</td>
+    </tr>
+    <tr>
+      <td>🚴 Andrés</td>
+      <td>16</td>
+      <td>🚴‍♂ Ciclismo</td>
+      <td>📞 6999-4433</td>
+    </tr>
+    <tr>
+      <td>🌟 Elena</td>
+      <td>17</td>
+      <td>🏃‍♀ Atletismo</td>
+      <td>📞 6777-8899</td>
+    </tr>
+  </table>
+
+</body>
+</html>
